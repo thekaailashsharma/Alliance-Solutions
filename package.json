@@ -1,8 +1,8 @@
 {
-  "name": "alliance-solutions",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "name": "construction-website",
+  "version": "1.0.0",
+  "description": "Construction Company Website",
+  "main": "server.js",
   "scripts": {
     "start": "vite",
     "dev": "vite",

@@ -1,0 +1,89 @@
+/* styles/styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light background */
+    color: #333; /* Dark text */
+}
+
+header {
+    background-color: #007BFF; /* Primary color */
+    color: white;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero, .about {
+    text-align: center;
+    padding: 20px;
+}
+
+.hero img, .about img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #007BFF; /* Primary color */
+    color: white;
+}
+
+/* Add styles for services and contact sections */
+.services {
+    padding: 20px;
+    background-color: #fff; /* White background for contrast */
+}
+
+.service-item {
+    border: 1px solid #007BFF; /* Border color */
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.contact {
+    padding: 20px;
+    background-color: #fff; /* White background for contrast */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #007BFF; /* Primary color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

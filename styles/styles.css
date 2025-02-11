@@ -166,7 +166,7 @@ body {
     left: -10%;
     width: 120%;
     height: 140%;
-    background-image: url('../images/construction-hero.jpg');
+    background-image: url('../images/img.png');
     background-size: cover;
     background-position: center;
     animation: parallaxBg 1s cubic-bezier(0.77, 0, 0.175, 1) forwards;

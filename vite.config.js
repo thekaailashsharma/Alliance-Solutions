@@ -24,6 +24,10 @@ export default defineConfig({
     logger: {
       level: 'all',
     },
+    allowedHosts: [
+      "localhost",
+      "alliance-solutions-u5fm.onrender.com"
+    ],
     proxy: {
       '/api': {
         target: 'https://backend-staging.leadbeam.ai',

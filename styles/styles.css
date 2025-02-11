@@ -496,7 +496,7 @@ body {
 }
 
 .service-card.featured {
-    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../images/project-management-bg.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../images/img.png');
     background-size: cover;
     color: var(--text-light);
 }

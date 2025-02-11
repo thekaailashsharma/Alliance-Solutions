@@ -11,11 +11,10 @@ const port = process.env.PORT || 4000;
 // Serve static files from root directory
 app.use(express.static(path.join(__dirname)));
 
-// Handle all routes by serving index.html
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'index.html'));
+res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
-}); 
+});

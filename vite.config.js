@@ -17,12 +17,17 @@ export default defineConfig({
     }
   },
   server: {
-    port: 4000,
+    port: process.env.PORT || 4000,
+    host: true, 
     open: true,
     console: true,
     logger: {
       level: 'all',
     },
+    allowedHosts: [
+      "localhost",
+      "alliance-solutions-u5fm.onrender.com"
+    ],
     proxy: {
       '/api': {
         target: 'https://backend-staging.leadbeam.ai',

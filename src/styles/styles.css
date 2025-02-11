@@ -3,13 +3,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Light background */
-    color: #333; /* Dark text */
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
 }
 
 header {
-    background-color: #007BFF; /* Primary color */
-    color: white;
+    background-color: #8B0000; /* Dark Red */
+    color: #ffffff; /* White text for header */
     padding: 10px 20px;
 }
 
@@ -24,16 +25,24 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #ffffff; /* White text for links */
     text-decoration: none;
+    padding: 10px 15px;
+    background-color: #FF69B4; /* Baby Pink */
+    border-radius: 5px;
 }
 
-.hero, .about {
+nav ul li a:hover {
+    background-color: #FF1493; /* Bright Pink on hover */
+}
+
+.hero, .why-choose-us, .services, .contact {
     text-align: center;
     padding: 20px;
+    background-color: #6A5ACD; /* Light Purple */
 }
 
-.hero img, .about img {
+.hero img, .why-choose-us img, .services img, .contact img {
     max-width: 100%;
     height: auto;
 }
@@ -41,8 +50,8 @@ nav ul li a {
 footer {
     text-align: center;
     padding: 10px 0;
-    background-color: #007BFF; /* Primary color */
-    color: white;
+    background-color: #8B0000; /* Dark Red */
+    color: #ffffff; /* White text for footer */
 }
 
 /* Add styles for services and contact sections */
@@ -86,4 +95,35 @@ form button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+/* Button styles */
+.cta-button {
+    padding: 10px 20px;
+    background-color: #FF69B4; /* Baby Pink */
+    color: #ffffff; /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #FF1493; /* Bright Pink on hover */
+}
+
+/* Add this to your existing CSS */
+.support-section h3,
+.services-section h2,
+.engineering-solutions .section-header h2 {
+    color: #ffffff; /* White text */
+}
+
+/* Add this to your existing CSS */
+.engineering-solutions .section-header h2,
+.featured-projects h2 {
+    color: #ffffff; /* White text */
+}
+
+html {
+    scroll-behavior: smooth; /* Smooth scrolling */
 }

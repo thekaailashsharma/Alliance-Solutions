@@ -431,7 +431,7 @@ body {
 
 /* Support Section */
 .support-section {
-    background: var(--background-light);
+    background: #1a1a1a;
     padding: 4rem 0;
 }
 
@@ -453,7 +453,7 @@ body {
 .support-phone {
     font-family: 'Oswald', sans-serif;
     font-size: 2.5rem;
-    color: var(--text-dark);
+    color: var(--text-light);
     text-decoration: none;
     font-weight: 600;
 }
@@ -467,7 +467,7 @@ body {
 /* Services Section */
 .services-section {
     padding: 5rem 0;
-    background: var(--background-light);
+    background: #1a1a1a;
     text-align: center;
 }
 
@@ -545,7 +545,7 @@ body {
     .hero-content h1 {
         font-size: 3rem;
     }
-    
+
     .services-grid {
         gap: 1.5rem;
     }
@@ -555,24 +555,24 @@ body {
     .main-nav {
         display: none;
     }
-    
+
     .mobile-menu-toggle {
         display: block;
     }
-    
+
     .services-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .support-section .container {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-    
+
     .hero-content h1 {
         font-size: 2.5rem;
     }
-    
+
     .hero-content {
         text-align: center;
         margin: 0 auto;
@@ -1437,4 +1437,4 @@ body {
 html {
     scroll-padding-top: 100px; /* Matches the header height */
     scroll-behavior: smooth;
-} 
+}

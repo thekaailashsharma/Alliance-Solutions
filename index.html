@@ -26,14 +26,20 @@
             </div>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="#hero" class="nav-link">Home</a></li>
-                    <li><a href="#services" class="nav-link">Services</a></li>
-                    <li><a href="#solutions" class="nav-link">Solutions</a></li>
-                    <li><a href="#projects" class="nav-link">Projects</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="#hero" class="nav-link" data-translate="nav.home">Home</a></li>
+                    <li><a href="#services" class="nav-link" data-translate="nav.services">Services</a></li>
+                    <li><a href="#solutions" class="nav-link" data-translate="nav.solutions">Solutions</a></li>
+                    <li><a href="#projects" class="nav-link" data-translate="nav.projects">Projects</a></li>
+                    <li><a href="#contact" class="nav-link" data-translate="nav.contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-right">
+                <div class="language-switcher">
+                    <select id="languageSelect" onchange="changeLanguage(this.value)">
+                        <option value="en">English</option>
+                        <option value="nl">Nederlands</option>
+                    </select>
+                </div>
                 <button class="theme-switch" aria-label="Toggle theme">
                     <span class="switch-handle"></span>
                 </button>
@@ -55,13 +61,13 @@
             <div class="hero-overlay"></div>
             <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
                 <h1 class="animate-text">
-                    <span class="line">Comprehensive</span>
-                    <span class="line">Construction Solutions</span>
-                    <span class="line">for All</span>
+                    <span class="line" data-translate="hero.title">Comprehensive</span>
+                    <span class="line" data-translate="hero.subtitle">Construction Solutions</span>
+                    <span class="line" data-translate="hero.tagline">for All</span>
                 </h1>
-                <p class="animate-text-p">Lorem ipsum is simply dummy text of the printing and<br>typesetting industry. Lorem Ipsum has been the industrys.</p>
+                <p class="animate-text-p" data-translate="hero.description">Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys.</p>
                 <a href="#services" class="cta-button">
-                    <span class="button-text">OUR SERVICES</span>
+                    <span class="button-text" data-translate="hero.cta">OUR SERVICES</span>
                     <span class="button-icon">»</span>
                 </a>
             </div>
@@ -82,26 +88,26 @@
         <section id="support" class="support-section">
             <div class="container">
                 <div class="support-content">
-                    <h3 style="color: #ffffff;">Need any construction solution support?</h3>
+                    <h3 style="color: #ffffff;" data-translate="support.title">Need any construction solution support?</h3>
                     <a href="tel:(258)1234-5678" class="support-phone">(258) 1234-5678</a>
                 </div>
                 <div class="support-text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in mauris fermentum, viverra elit at, facilisis ante. Sed lacinia vulputate cursus. Morbi suscipit sapien et blandit sagittis.</p>
+                    <p data-translate="support.description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
             </div>
         </section>
 
         <section id="services" class="services-section">
             <div class="container">
-                <h2 style="color: #ffffff;">We Assist in Choosing the Perfect<br>Materials for Your Project</h2>
+                <h2 style="color: #ffffff;" data-translate="services.mainTitle">We Assist in Choosing the Perfect Materials for Your Project</h2>
                 <div class="services-grid">
                     <div class="service-card">
                         <div class="service-icon">
                             <img src="/images/img.png" alt="Engineering">
                         </div>
-                        <h3>Engineering Techniques</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-                        <a href="#" class="view-more">View More →</a>
+                        <h3 data-translate="services.engineering.title">Engineering Techniques</h3>
+                        <p data-translate="services.engineering.description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                        <a href="#" class="view-more" data-translate="common.viewMore">View More →</a>
                     </div>
 
                     <div class="service-card featured">
@@ -128,7 +134,7 @@
         <section id="why-choose-us" class="why-choose-us">
             <div class="container">
                 <div class="why-choose-content">
-                    <h2 style="color: #ffffff;">Why choose us?</h2>
+                    <h2 style="color: #ffffff;" data-translate="whyChooseUs.title">Why choose us?</h2>
                     <p>We have a team of experienced professionals who have been in the industry for over 25 years. Our contractors have a wealth of knowledge and skills that they have acquired over the years, making them experts in their field.</p>
                     <a href="#" class="cta-button">VIEW MORE »</a>
                 </div>
@@ -141,7 +147,7 @@
         <section id="solutions" class="engineering-solutions" style="background-color: #1a1a1a;">
             <div class="container">
                 <div class="section-header">
-                    <h2 style="color: #ffffff;">Dependable Engineering Solutions<br>for Your Project</h2>
+                    <h2 style="color: #ffffff;" data-translate="solutions.title">Dependable Engineering Solutions<br>for Your Project</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
                 </div>
 
@@ -182,7 +188,7 @@
         <section id="projects" class="featured-projects">
             <div class="container">
                 <div class="section-header">
-                    <h2 style="color: #ffffff;">Our Featured Projects</h2>
+                    <h2 style="color: #ffffff;" data-translate="projects.title">Our Featured Projects</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
                     <div class="slider-controls">
                         <button class="prev-btn">←</button>
@@ -459,5 +465,6 @@
         <p>&copy; 2024 Alliance Solutions B.V.</p>
     </footer>
     <script src="src/main.js"></script>
+    <script src="src/js/language.js"></script>
 </body>
 </html>

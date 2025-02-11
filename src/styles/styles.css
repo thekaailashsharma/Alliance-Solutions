@@ -127,3 +127,43 @@ form button {
 html {
     scroll-behavior: smooth; /* Smooth scrolling */
 }
+
+/* Language Switcher Styles */
+.language-switcher {
+    position: relative;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.language-switcher select {
+    padding: 8px 30px 8px 10px;
+    background-color: #FF69B4;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-size: 14px;
+}
+
+.language-switcher select:hover {
+    background-color: #FF1493;
+}
+
+.language-switcher::after {
+    content: '▼';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ffffff;
+    pointer-events: none;
+}
+
+/* Add styles for when content is being translated */
+.translating {
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}

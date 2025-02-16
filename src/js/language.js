@@ -2,10 +2,8 @@ const translations = {
     en: {
         nav: {
             home: "Home",
-            about: "About",
             services: "Services",
             solutions: "Solutions",
-            projects: "Projects",
             contact: "Contact"
         },
         hero: {
@@ -17,104 +15,74 @@ const translations = {
         },
         support: {
             title: "Need any construction solution support?",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
         },
         services: {
-            mainTitle: "We Assist in Choosing the Perfect Materials for Your Project",
+            mainTitle: "How do we work?",
             engineering: {
-                title: "Engineering Techniques",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                title: "Personalized Intake",
+                description: "Both employers and candidates undergo a thorough intake process to map out their specific needs and preferences."
             },
             management: {
-                title: "Project Management",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                title: "Customized solutions",
+                description: "Based on the intake, Alliance Solutions B.V. matches employers with the right\n" +
+                  "candidates. The selection is not only based on experience and skills but also on\n" +
+                  "cultural fit and personal ambitions."
             },
-            financial: {
-                title: "Financial Results",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            communication: {
+                title: "Transparent communication:",
+                description: "The company highly values open and clear communication with all parties involved.\n" +
+                  "Candidates are well-prepared for their new roles, while employers stay informed\n" +
+                  "about the selection process."
+            },
+            quality: {
+                title: "Quality and speed",
+                description: "With an efficient work process and a team experienced in recruitment and staffing,\n" +
+                  "Alliance Solutions delivers high-quality personnel quickly."
             }
         },
         whyChooseUs: {
             title: "Why choose us?",
-            description: "We have a team of experienced professionals who have been in the industry for over 25 years. Our contractors have a wealth of knowledge and skills that they have acquired over the years, making them experts in their field.",
-            cta: "VIEW MORE"
+            description: "🔹 Flexibility: Solutions for both short-term and long-term staffing needs.\n" +
+              "🔹 Network: A wide range of candidates with diverse backgrounds and skills.\n" +
+              "🔹 Reliability: A strong focus on transparency and quality at every step of the process.\n" +
+              "With an innovative approach and a commitment to the satisfaction of both employers and employees, Alliance Solutions B.V. positions itself as a trusted partner in the dynamic labor market.\n" +
+              "\n" +
+              "Our goal is to reduce the workload for existing staff. We may not be the cheapest, but we are the best—as our motto says: \"Be Excellent.\" Additionally, we stand for diversity. We focus on qualities, not motivation. After our face-to-face onboarding, all necessary resources and information can be accessed in our digital environment.",
         },
         solutions: {
-            title: "Dependable Engineering Solutions for Your Project",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            title: "Reliable Staffing Solutions\n" +
+              "for Your Business\n",
+            description: "At Alliance Solutions B.V., we provide comprehensive recruitment and workforce solutions tailored to meet the unique needs of businesses across various industries. Whether you're looking for skilled professionals, flexible staffing, or project-based hiring, we ensure seamless workforce management with efficiency and reliability.",
             categories: {
-                automation: {
-                    tag: "AUTOMATION",
-                    title: "Old Building Renovation",
-                    description: "But I must explain to you how all this mistaken idea of denouncing pleasure"
+                recruitment: {
+                    tag: "RECRUITMENT",
+                    title: "Optimized Recruitment Processes",
+                    description: "We leverage advanced technology and AI-driven recruitment tools to streamline talent acquisition, reducing\n" +
+                      "            hiring time and enhancing candidate matching accuracy."
                 },
-                maintenance: {
-                    tag: "MAINTENANCE",
-                    title: "Expertise And Experience",
-                    description: "At vero eos et accusamus et iusto odio dignissimos ducimus"
-                },
-                assemble: {
-                    tag: "ASSEMBLE",
-                    title: "Community Engagement",
-                    description: "At vero eos et accusamus et iusto odio dignissimos ducimus"
+                workforce: {
+                    tag: "SKILLED WORKFORCE",
+                    title: "Skilled Workforce for Large-Scale Projects",
+                    description: "✅ Expert Staffing for Engineering & Infrastructure\n" +
+                      "            From IT to finance, we provide skilled personnel for both short-term and long-term projects,\n" +
+                      "            ensuring your business operates at its full potential."
                 }
             }
         },
-        projects: {
-            title: "Our Featured Projects",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-            items: {
-                axelTowers: {
-                    title: "Axel Towers",
-                    category: "Building & Interior"
+        ready: {
+            title: "Ready to Get Started?\n" +
+              "Contact Us Today!",
+            description: "Alliance Solutions B.V. is a modern recruitment and staffing organization focused on connecting employers and talent across various sectors. Founded in 2024, the company’s mission is to support organizations in fulfilling their staffing needs while helping candidates find challenging and suitable jobs.",
+            tags: {
+                specializes: {
+                    title: "Specializes",
+                    description: "in recruiting",
+                    longTerms: "Alliance Solutions B.V. specializes in recruiting, selecting, and placing personnel. They provide flexible solutions, including temporary placements, secondment, and project-based work.",
                 },
-                glassHotel: {
-                    title: "Glass Hotel",
-                    category: "Renovation & Architecture"
-                },
-                bridgeRiver: {
-                    title: "Bridge River",
-                    category: "Renovation & Architecture"
-                }
-            }
-        },
-        steps: {
-            step1: {
-                title: "Evaluation And Signing Of The Contract",
-                number: "Step 1"
-            },
-            step2: {
-                title: "Implementation Of Quality Works",
-                number: "Step 2"
-            },
-            step3: {
-                title: "Preparation Of The Work Plan",
-                number: "Step 3"
-            },
-            step4: {
-                title: "Delivering The Project To The Customer",
-                number: "Step 4"
-            }
-        },
-        team: {
-            title: "Building Team",
-            cta: "OUR LEADERSHIP",
-            members: {
-                jessica: {
-                    name: "Jessica Down",
-                    role: "Painter"
-                },
-                john: {
-                    name: "John Garris",
-                    role: "Engineer"
-                },
-                dave: {
-                    name: "Dave Collin",
-                    role: "Architect"
-                },
-                kate: {
-                    name: "Kate Drane",
-                    role: "Industrial Engineer"
+                extensive: {
+                    title: "Extensive",
+                    description: "network",
+                    longTerms: "Through an extensive network and a personalized approach, the company offers tailored solutions for both employers and job seekers.",
                 }
             }
         },
@@ -147,11 +115,9 @@ const translations = {
     },
     nl: {
         nav: {
-            home: "Home",
-            about: "Over Ons",
+            home: "Thuis",
             services: "Diensten",
             solutions: "Oplossingen",
-            projects: "Projecten",
             contact: "Contact"
         },
         hero: {
@@ -162,105 +128,85 @@ const translations = {
             cta: "ONZE DIENSTEN"
         },
         support: {
-            title: "Hulp nodig bij bouwoplossingen?",
+            title: "Heeft u ondersteuning nodig bij een bouwoplossing?",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
         },
         services: {
-            mainTitle: "Wij Helpen bij het Kiezen van de Perfecte Materialen voor uw Project",
+            mainTitle: "Hoe gaan ze te werk?",
             engineering: {
-                title: "Technische Oplossingen",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                title: "Gepersonaliseerde intake",
+                description: "Zowel werkgevers als kandidaten ondergaan een gedegen intaketraject om hun specifieke wensen en voorkeuren in kaart te brengen."
             },
             management: {
-                title: "Projectmanagement",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                title: "Maatwerkoplossingen",
+                description: "Op basis van de intake matcht Alliance Solutions B.V. werkgevers met de juiste\n"+
+                  "kandidaten. De selectie is niet alleen gebaseerd op ervaring en vaardigheden, maar ook op\n" +
+                  "culturele fit en persoonlijke ambities."
             },
-            financial: {
-                title: "Financiële Resultaten",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            communication: {
+                title: "Transparante communicatie",
+                description: "Het bedrijf hecht veel waarde aan open en duidelijke communicatie met alle betrokken partijen.\n" +
+                  "Kandidaten zijn goed voorbereid op hun nieuwe rol, terwijl werkgevers op de hoogte blijven\n" +
+                  "Over het selectieproces."
+            },
+            quality: {
+                title: "Kwaliteit en snelheid",
+                description: "Met een efficiënt werkproces en een team met ervaring in werving en selectie,\n" +
+                  "Alliance Solutions levert snel kwalitatief hoogstaand personeel."
             }
         },
         whyChooseUs: {
-            title: "Waarom voor ons kiezen?",
-            description: "We hebben een team van ervaren professionals die al meer dan 25 jaar in de industrie werken. Onze aannemers beschikken over een schat aan kennis en vaardigheden die ze door de jaren heen hebben opgedaan.",
+            title: "Waarom Alliance Solutions B.V.?",
+            description: "🔹 Flexibiliteit: Zowel voor korte als lange termijn personeelsbehoeften.\n" +
+              "🔹 Netwerk: Een breed scala aan kandidaten met diverse achtergronden en\n" +
+              "vaardigheden.\n" +
+              "🔹 Betrouwbaarheid: Focus op transparantie en kwaliteit in elke stap van het proces.\n" +
+              "Met een innovatieve aanpak en focus op tevredenheid van zowel werkgevers als\n" +
+              "werknemers, positioneert Alliance Solutions B.V. zich als een betrouwbare partner in\n" +
+              "de dynamische arbeidsmarkt.\n" +
+              "\n" +
+              "Doel is om de werkdruk te verlagen voor het huidige personeel. We zijn niet de\n" +
+              "goedkoopste maar wel de beste zoals ons motto zegt be excellent.\n" +
+              "Ook staan wij voor een divers bedrijf. We kijken naar kwaliteiten en niet naar\n" +
+              "motivatie.\n" +
+              "Geef ook aan na onze face to face onboarding kunnen ze alles vinden in onze\n" +
+              "digitale omgeving.",
             cta: "BEKIJK MEER"
         },
         solutions: {
-            title: "Betrouwbare Engineering Oplossingen voor uw Project",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            title: "Betrouwbare personeelsoplossingen\n" +
+              "voor uw bedrijf\n",
+            description: "Bij Alliance Solutions B.V. bieden we uitgebreide wervings- en personeelsoplossingen die zijn afgestemd op de unieke behoeften van bedrijven in verschillende sectoren. Of u nu op zoek bent naar bekwame professionals, flexibel personeel of projectmatige inhuur: wij zorgen voor naadloos personeelsbeheer met efficiëntie en betrouwbaarheid.",
             categories: {
-                automation: {
-                    tag: "AUTOMATISERING",
-                    title: "Renovatie Oude Gebouwen",
-                    description: "Maar ik moet u uitleggen hoe dit verkeerde idee van het veroordelen van plezier"
+                recruitment: {
+                    tag: "AANWERVING",
+                    title: "Geoptimaliseerde wervingsprocessen",
+                    description: "We maken gebruik van geavanceerde technologie en AI-gestuurde rekruteringstools om de acquisitie van talent te stroomlijnen en zo\\n\" + te verminderen\n" +
+                      "                      \" aanwervingstijd en het verbeteren van de nauwkeurigheid van het matchen van kandidaten."
                 },
-                maintenance: {
-                    tag: "ONDERHOUD",
-                    title: "Expertise en Ervaring",
-                    description: "Maar wij beschuldigen hen die terecht waardig zijn"
-                },
-                assemble: {
-                    tag: "MONTAGE",
-                    title: "Gemeenschapsbetrokkenheid",
-                    description: "Maar wij beschuldigen hen die terecht waardig zijn"
+                workforce: {
+                    tag: "GESCHIKTE WERKKRACHT",
+                    title: "Geschoold personeel voor grootschalige projecten",
+                    description: "✅ Deskundig personeel voor techniek en infrastructuur\n" +
+                      " Van IT tot financiën, wij bieden bekwaam personeel voor zowel korte als lange termijn projecten,\n" +
+                      "Ervoor zorgen dat uw bedrijf optimaal functioneert."
                 }
             }
         },
-        projects: {
-            title: "Onze Uitgelichte Projecten",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-            items: {
-                axelTowers: {
-                    title: "Axel Towers",
-                    category: "Bouw & Interieur"
+        ready: {
+            title: "Klaar om aan de slag te gaan?\n" +
+              "Neem vandaag nog contact met ons op!",
+            description: "Alliance Solutions B.V. is een moderne recruitment- en uitzendorganisatie gericht op het verbinden van werkgevers en talent uit verschillende sectoren. Het bedrijf, opgericht in 2024, heeft als missie organisaties te ondersteunen bij het vervullen van hun personeelsbehoeften en tegelijkertijd kandidaten te helpen uitdagende en passende banen te vinden.",
+            tags: {
+                specializes: {
+                    title: "Gespecialiseerd",
+                    description: "bij rekrutering",
+                    longTerms: "Alliance Solutions B.V. is gespecialiseerd in het werven, selecteren en plaatsen van personeel. Zij bieden flexibele oplossingen, waaronder tijdelijke plaatsingen, detachering en projectmatig werken.",
                 },
-                glassHotel: {
-                    title: "Glazen Hotel",
-                    category: "Renovatie & Architectuur"
-                },
-                bridgeRiver: {
-                    title: "Rivierbrug",
-                    category: "Renovatie & Architectuur"
-                }
-            }
-        },
-        steps: {
-            step1: {
-                title: "Evaluatie en Ondertekening van het Contract",
-                number: "Stap 1"
-            },
-            step2: {
-                title: "Uitvoering van Kwaliteitswerken",
-                number: "Stap 2"
-            },
-            step3: {
-                title: "Voorbereiding van het Werkplan",
-                number: "Stap 3"
-            },
-            step4: {
-                title: "Oplevering van het Project aan de Klant",
-                number: "Stap 4"
-            }
-        },
-        team: {
-            title: "Bouwteam",
-            cta: "ONS LEIDERSCHAP",
-            members: {
-                jessica: {
-                    name: "Jessica Down",
-                    role: "Schilder"
-                },
-                john: {
-                    name: "John Garris",
-                    role: "Ingenieur"
-                },
-                dave: {
-                    name: "Dave Collin",
-                    role: "Architect"
-                },
-                kate: {
-                    name: "Kate Drane",
-                    role: "Industrieel Ingenieur"
+                extensive: {
+                    title: "Uitgebreid",
+                    description: "netwerk",
+                    longTerms: "Via een uitgebreid netwerk en een persoonlijke aanpak biedt het bedrijf oplossingen op maat voor zowel werkgevers als werkzoekenden.",
                 }
             }
         },
@@ -323,12 +269,12 @@ function changeLanguage(language) {
     }, 300);
 }
 
-// // Initialize language based on localStorage or default to English
-// document.addEventListener('DOMContentLoaded', () => {
-//     const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
-//     const languageSelect = document.getElementById('languageSelect');
-//     if (languageSelect) {
-//         languageSelect.value = savedLanguage;
-//     }
-//     changeLanguage(savedLanguage);
-// });
+// Initialize language based on localStorage or default to English
+document.addEventListener('DOMContentLoaded', () => {
+    const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
+    const languageSelect = document.getElementById('languageSelect');
+    if (languageSelect) {
+        languageSelect.value = savedLanguage;
+    }
+    changeLanguage(savedLanguage);
+});

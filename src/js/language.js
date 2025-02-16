@@ -323,12 +323,12 @@ function changeLanguage(language) {
     }, 300);
 }
 
-// Initialize language based on localStorage or default to English
-document.addEventListener('DOMContentLoaded', () => {
-    const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
-    const languageSelect = document.getElementById('languageSelect');
-    if (languageSelect) {
-        languageSelect.value = savedLanguage;
-    }
-    changeLanguage(savedLanguage);
-}); 
+// // Initialize language based on localStorage or default to English
+// document.addEventListener('DOMContentLoaded', () => {
+//     const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
+//     const languageSelect = document.getElementById('languageSelect');
+//     if (languageSelect) {
+//         languageSelect.value = savedLanguage;
+//     }
+//     changeLanguage(savedLanguage);
+// });

@@ -7,10 +7,10 @@ const translations = {
             contact: "Contact"
         },
         hero: {
-            title: "Comprehensive",
+            title: "Alliance Solutions",
             subtitle: "Construction Solutions",
             tagline: "for All",
-            description: "Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys.",
+            description: "Would you also like to work at company and home parties, weddings, conferences, trade fairs, festivals and party cafes?",
             cta: "OUR SERVICES"
         },
         support: {
@@ -66,13 +66,19 @@ const translations = {
                     description: "✅ Expert Staffing for Engineering & Infrastructure\n" +
                       "            From IT to finance, we provide skilled personnel for both short-term and long-term projects,\n" +
                       "            ensuring your business operates at its full potential."
+                },
+                projectManagement: {
+                    tag: "PROJECT MANAGEMENT",
+                    title: "Expert Project Management Solutions",
+                    description: "✅ Comprehensive management for your projects\n" +
+                      "Our experienced team ensures that your projects are delivered on time and within budget, providing you with peace of mind."
                 }
             }
         },
         ready: {
             title: "Ready to Get Started?\n" +
               "Contact Us Today!",
-            description: "Alliance Solutions B.V. is a modern recruitment and staffing organization focused on connecting employers and talent across various sectors. Founded in 2024, the company’s mission is to support organizations in fulfilling their staffing needs while helping candidates find challenging and suitable jobs.",
+            description: "Alliance Solutions B.V. is a modern recruitment and staffing organization focused on connecting employers and talent across various sectors. Founded in 2024, the company's mission is to support organizations in fulfilling their staffing needs while helping candidates find challenging and suitable jobs.",
             tags: {
                 specializes: {
                     title: "Specializes",
@@ -98,7 +104,7 @@ const translations = {
         },
         footer: {
             address: {
-                title: "Address",
+                title: "Contact",
                 phone: "(001) 123 456 789",
                 email: "hello@gmail.com",
                 location: "5241 Elgin st. Celina, 10258"
@@ -107,7 +113,7 @@ const translations = {
                 title: "PAGE LINKS",
                 items: ["Home", "About", "Services", "Blog Post"]
             },
-            copyright: "© 2024 Construction - All Rights Reserved"
+            copyright: "© 2024 Alliance Solutions. All Rights Reserved"
         },
         common: {
             viewMore: "View More →"
@@ -121,11 +127,11 @@ const translations = {
             contact: "Contact"
         },
         hero: {
-            title: "Uitgebreide",
-            subtitle: "Bouwoplossingen",
-            tagline: "voor Iedereen",
-            description: "Lorem ipsum is simpelweg een proeftekst uit het drukkerij- en zetterijwezen.",
-            cta: "ONZE DIENSTEN"
+            title: "Alliance Solutions",
+            subtitle: "Construction Solutions",
+            tagline: "for All",
+            description: "Wil jij ook werken op bedrijfs- en thuisfeesten, bruiloften, congressen, beurzen, festivals en feestcafés?",
+            cta: "OUR SERVICES"
         },
         support: {
             title: "Heeft u ondersteuning nodig bij een bouwoplossing?",
@@ -181,15 +187,20 @@ const translations = {
                 recruitment: {
                     tag: "AANWERVING",
                     title: "Geoptimaliseerde wervingsprocessen",
-                    description: "We maken gebruik van geavanceerde technologie en AI-gestuurde rekruteringstools om de acquisitie van talent te stroomlijnen en zo\\n\" + te verminderen\n" +
-                      "                      \" aanwervingstijd en het verbeteren van de nauwkeurigheid van het matchen van kandidaten."
+                    description: "We maken gebruik van geavanceerde technologie en AI-gestuurde rekruteringstools om de acquisitie van talent te stroomlijnen, de aanwervingstijd te verminderen en de nauwkeurigheid van het matchen van kandidaten te verbeteren."
                 },
                 workforce: {
                     tag: "GESCHIKTE WERKKRACHT",
                     title: "Geschoold personeel voor grootschalige projecten",
                     description: "✅ Deskundig personeel voor techniek en infrastructuur\n" +
-                      " Van IT tot financiën, wij bieden bekwaam personeel voor zowel korte als lange termijn projecten,\n" +
-                      "Ervoor zorgen dat uw bedrijf optimaal functioneert."
+                      "Van IT tot financiën, wij bieden bekwaam personeel voor zowel korte als lange termijn projecten,\n" +
+                      "en zorgen ervoor dat uw bedrijf optimaal functioneert."
+                },
+                projectManagement: {
+                    tag: "PROJECTMANAGEMENT",
+                    title: "Deskundige projectmanagementoplossingen",
+                    description: "✅ Uitgebreid beheer voor uw projecten\n" +
+                      "Ons ervaren team zorgt ervoor dat uw projecten op tijd en binnen budget worden geleverd, zodat u gemoedsrust heeft."
                 }
             }
         },
@@ -222,16 +233,16 @@ const translations = {
         },
         footer: {
             address: {
-                title: "Adres",
+                title: "Contact",
                 phone: "(001) 123 456 789",
                 email: "hello@gmail.com",
                 location: "5241 Elgin st. Celina, 10258"
             },
             links: {
-                title: "PAGINA LINKS",
-                items: ["Home", "Over Ons", "Diensten", "Blog Post"]
+                title: "PAGE LINKS",
+                items: ["Home", "About", "Services", "Contact"]
             },
-            copyright: "© 2024 Construction - Alle Rechten Voorbehouden"
+            copyright: "© 2024 Alliance Solutions. All Rights Reserved"
         },
         common: {
             viewMore: "Bekijk Meer →"
@@ -278,3 +289,16 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     changeLanguage(savedLanguage);
 });
+
+function toggleFAQ(element) {
+    const answer = element.nextElementSibling;
+    const toggleBtn = element.querySelector('.toggle-btn');
+
+    if (answer.style.display === "block") {
+        answer.style.display = "none";
+        toggleBtn.textContent = "+";
+    } else {
+        answer.style.display = "block";
+        toggleBtn.textContent = "-";
+    }
+}

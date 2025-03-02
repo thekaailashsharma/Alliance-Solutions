@@ -28,25 +28,22 @@
     </div>
     <nav class="main-nav">
       <ul>
-        <li><a href="#hero" class="nav-link" data-translate="nav.home">Home</a></li>
-        <li><a href="#services" class="nav-link" data-translate="nav.services">Services</a></li>
-        <li><a href="#solutions" class="nav-link" data-translate="nav.solutions">Solutions</a></li>
-        <li><a href="#contact" class="nav-link" data-translate="nav.contact">Contact</a></li>
+        <li><a href="#hero" class="nav-link" data-translate="nav.home">I want to work</a></li>
+        <li><a href="#services" class="nav-link" data-translate="nav.clients">Clients</a></li>
+        <li><a href="#solutions" class="nav-link" data-translate="nav.about">About us</a></li>
+        <li><a href="#contact" class="nav-link" data-translate="nav.contact">Contact Us</a></li>
       </ul>
     </nav>
     <div class="header-right">
       <div class="language-switcher">
-        <label for="languageSelect"></label><select id="languageSelect" onchange="changeLanguage(this.value)">
-        <option value="en">English</option>
-        <option value="nl">Nederlands</option>
-      </select>
+        <select id="languageSelect" onchange="changeLanguage(this.value)">
+          <option value="en">English</option>
+          <option value="nl">Nederlands</option>
+        </select>
       </div>
-      <button class="theme-switch" aria-label="Toggle theme">
-        <span class="switch-handle"></span>
-      </button>
       <a href="tel:(268)555-0123" class="phone-number">
         <i class="phone-icon">📞</i>
-        (268) 555-0123
+        <span data-translate="common.callUs">Call us</span>
       </a>
     </div>
   </div>
@@ -54,39 +51,30 @@
 
 <main>
   <section id="hero" class="hero-section">
-    <div class="hero-background">
+    <div class="hero-content">
+        <h1 class="hero-title" data-translate="hero.title">We Get The Job Done</h1>
+        <p class="hero-description" data-translate="hero.description">
+            Would you also like to work at company and home parties, weddings, conferences, trade fairs, festivals, and party cafes?
+        </p>
+        <div class="hero-buttons">
+            <a href="#contact" class="btn btn-contact" data-translate="hero.cta.contact">Contact Us</a>
+            <a href="#services" class="btn btn-readmore" data-translate="hero.cta.readmore">Read more</a>
+        </div>
     </div>
-    <div class="hero-overlay"></div>
-    <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
-      <h1 class="animate-text">
-        <span class="line" data-translate="hero.title">Comprehensive</span>
-        <span class="line" data-translate="hero.subtitle">Construction Solutions</span>
-        <span class="line" data-translate="hero.tagline">for All</span>
-      </h1>
-      <p class="animate-text-p" data-translate="hero.description">
-        Connecting Talent with Opportunity
-        Alliance Solutions B.V. helps businesses find the right talent while guiding job seekers to their ideal careers.
-      </p>
-      <a href="#services" class="cta-button">
-        <span class="button-text" data-translate="hero.cta">OUR SERVICES</span>
-        <span class="button-icon">»</span>
-      </a>
-    </div>
-    <div class="curved-overlay"></div>
   </section>
 
   <section id="support" class="support-section">
     <div class="container">
       <div class="support-content">
-        <h3 style="color: #ffffff;" data-translate="support.title">Need any Recruitment solution support?</h3>
-        <a href="tel:(258)1234-5678" class="support-phone">(258) 1234-5678</a>
+        <h3 style="color: var(--text-dark);" data-translate="support.title">Need any Recruitment solution support?</h3>
+        <a href="tel:(258)1234-5678" class="support-phone" style="color: var(--text-dark)">(258) 1234-5678</a>
       </div>
     </div>
   </section>
 
   <section id="services" class="services-section">
     <div class="container">
-      <h2 style="color: #ffffff;" data-translate="services.mainTitle">Modern business professionals in recruitment</h2>
+      <h2 style="color: var(--text-dark);" data-translate="services.mainTitle">Modern business professionals in recruitment</h2>
       <div class="services-grid">
         <div class="service-card">
           <div class="service-icon">
@@ -140,7 +128,7 @@
   <section id="why-choose-us" class="why-choose-us">
     <div class="container">
       <div class="why-choose-content">
-        <h2 style="color: #ffffff;" data-translate="whyChooseUs.title">
+        <h2 style="color: var(--text-dark);" data-translate="whyChooseUs.title">
           Why choose Alliance Solutions B.V.?
         </h2>
         <p data-translate="whyChooseUs.description">
@@ -169,10 +157,10 @@
     </div>
   </section>
 
-  <section id="solutions" class="engineering-solutions" style="background-color: #1a1a1a;">
+  <section id="solutions" class="engineering-solutions" style="background-color: var(--background-light1);">
     <div class="container">
       <div class="section-header">
-        <h2 style="color: #ffffff;" data-translate="solutions.title">Reliable Staffing Solutions <br>for Your Business
+        <h2 style="color: var(--text-dark);" data-translate="solutions.title">Reliable Staffing Solutions <br>for Your Business
         </h2>
         <p>
           At Alliance Solutions B.V., we provide comprehensive recruitment and workforce
@@ -208,27 +196,65 @@
           <img src="/images/skilled.png" alt="Expertise Team" class="solution-image">
         </div>
 
+        <div class="solution-card">
+          <div class="solution-icon">
+          </div>
+          <span class="solution-tag" data-translate="solutions.categories.projectManagement.tag">SKILLED WORKFORCE</span>
+          <h3 data-translate="solutions.categories.projectManagement.title">Skilled Workforce for Large-Scale Projects</h3>
+          <p data-translate="solutions.categories.projectManagement.description">
+            ✅ Expert Staffing for Engineering & Infrastructure
+            From IT to finance, we provide skilled personnel for both short-term and long-term projects,
+            ensuring your business operates at its full potential.
+          </p>
+          <img src="/images/pm.png" alt="Expertise Team" class="solution-image">
+        </div>
+
 
       </div>
     </div>
   </section>
 
+  <section id="faq" class="faq-section">
+    <div class="container">
+      <h2 class="faq-title">Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <h3>What services do you offer?</h3>
+          <span class="toggle-btn">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>We offer a range of recruitment and staffing solutions tailored to various industries.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <h3>How can I apply for a job?</h3>
+          <span class="toggle-btn">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>You can apply through our website or contact us directly for more information.</p>
+        </div>
+      </div>
+      <!-- Add more FAQ items as needed -->
+    </div>
+  </section>
+
   <section id="contact" class="contact-section">
     <div class="container">
-      <div class="contact-content">
+      <div class="contact-content" style="color: var(--text-dark)">
         <h2 data-translate="ready.title">Ready to Get Started?<br>Contact Us Today!</h2>
-        <p data-translate="ready.description">
+        <p data-translate="ready.description" style="color: var(--text-dark)">
           Alliance Solutions B.V. is a modern recruitment and staffing organization focused on
           connecting employers and talent across various sectors. Founded in 2024, the
-          company’s mission is to support organizations in fulfilling their staffing needs while
+          company's mission is to support organizations in fulfilling their staffing needs while
           helping candidates find challenging and suitable jobs.
         </p>
 
         <div class="stats">
           <div class="stat-item">
             <h3 data-translate="ready.tags.specializes.title">Specializes</h3>
-            <p data-translate="ready.tags.specializes.description">in recruiting</p>
-            <span data-translate="ready.tags.specializes.longTerms">
+            <p data-translate="ready.tags.specializes.description" style="color: var(--text-dark)">in recruiting</p>
+            <span data-translate="ready.tags.specializes.longTerms" style="color: var(--text-dark)">
                               Alliance Solutions B.V. specializes in recruiting, selecting, and placing personnel.
 They provide flexible solutions, including temporary placements, secondment, and
 project-based work.
@@ -236,8 +262,8 @@ project-based work.
           </div>
           <div class="stat-item">
             <h3 data-translate="ready.tags.extensive.title">Extensive</h3>
-            <p data-translate="ready.tags.extensive.description">network</p>
-            <span data-translate="ready.tags.extensive.longTerms">
+            <p data-translate="ready.tags.extensive.description" style="color: var(--text-dark)">network</p>
+            <span data-translate="ready.tags.extensive.longTerms" style="color: var(--text-dark)">
                               Through an extensive network and a personalized approach, the
 company offers tailored solutions for both employers and job seekers.
                             </span>
@@ -249,6 +275,18 @@ company offers tailored solutions for both employers and job seekers.
     </div>
   </section>
 </main>
+<footer class="footer">
+    <div class="container footer-content">
+        <div class="footer-address">
+            <p data-translate="footer.address.location">5241 Elgin st. Celina, 10258</p>
+            <p data-translate="footer.address.phone">Phone: (001) 123 456 789</p>
+            <p data-translate="footer.address.email">Email: hello@gmail.com</p>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2024 Alliance Solutions. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
 <script src="src/main.js"></script>
 <script src="src/js/language.js"></script>
 </body>

@@ -1,200 +1,282 @@
 /* styles/styles.css */
+:root {
+    --primary-color: #E535AB; /* Pink color from DoneJob */
+    --secondary-color: #00FF00; /* Green color from DoneJob */
+    --text-color: #333333;
+    --background-light: #ffffff;
+    --button-pink: #E535AB;
+    --button-green: #00FF00;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: "JetBrains Sans", Inter, system-ui, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000000; /* Black background */
-    color: #ffffff; /* White text */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+    background: var(--background-light);
+    color: var(--text-color);
 }
 
-header {
-    background-color: #8B0000; /* Dark Red */
-    color: #ffffff; /* White text for header */
-    padding: 10px 20px;
+/* Header Styles */
+.main-header {
+    background: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-nav ul {
-    list-style-type: none;
+.header-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+}
+
+/* Navigation */
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
     padding: 0;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 15px;
-}
-
-nav ul li a {
-    color: #ffffff; /* White text for links */
+.main-nav a {
+    color: var(--text-color);
     text-decoration: none;
-    padding: 10px 15px;
-    background-color: #FF69B4; /* Baby Pink */
-    border-radius: 5px;
+    font-size: 1rem;
 }
 
-nav ul li a:hover {
-    background-color: #FF1493; /* Bright Pink on hover */
-}
-
-.hero, .why-choose-us, .services, .contact {
-    text-align: center;
-    padding: 20px;
-    background-color: #6A5ACD; /* Light Purple */
-}
-
-.hero img, .why-choose-us img, .services img, .contact img {
-    max-width: 100%;
-    height: auto;
-}
-
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #8B0000; /* Dark Red */
-    color: #ffffff; /* White text for footer */
-}
-
-/* Add styles for services and contact sections */
-.services {
-    padding: 20px;
-    background-color: #fff; /* White background for contrast */
-}
-
-.service-item {
-    border: 1px solid #007BFF; /* Border color */
-    margin: 10px 0;
-    padding: 15px;
-    border-radius: 5px;
-}
-
-.contact {
-    padding: 20px;
-    background-color: #fff; /* White background for contrast */
-}
-
-form {
+/* Header Buttons */
+.header-buttons {
     display: flex;
-    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
 }
 
-form label {
-    margin: 10px 0 5px;
-}
-
-form input, form textarea {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-form button {
-    padding: 10px;
-    background-color: #007BFF; /* Primary color */
+.btn-work {
+    background: var(--button-pink);
     color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: opacity 0.3s;
 }
 
-/* Button styles */
-.cta-button {
-    padding: 10px 20px;
-    background-color: #FF69B4; /* Baby Pink */
-    color: #ffffff; /* White text */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.btn-call {
+    background: var(--button-green);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: opacity 0.3s;
 }
 
-.cta-button:hover {
-    background-color: #FF1493; /* Bright Pink on hover */
-}
-
-/* Add this to your existing CSS */
-.support-section h3,
-.services-section h2,
-.engineering-solutions .section-header h2 {
-    color: #ffffff; /* White text */
-}
-
-/* Add this to your existing CSS */
-.engineering-solutions .section-header h2,
-.featured-projects h2 {
-    color: #ffffff; /* White text */
-}
-
-html {
-    scroll-behavior: smooth; /* Smooth scrolling */
-}
-
-/* Language Switcher Styles */
-.language-switcher {
+/* Hero Section */
+.hero-section {
     position: relative;
-    display: inline-block;
-    margin-left: 20px;
-}
-
-.language-switcher select {
-    padding: 8px 30px 8px 10px;
-    background-color: #FF69B4;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    font-size: 14px;
-}
-
-.language-switcher select:hover {
-    background-color: #FF1493;
-}
-
-.language-switcher::after {
-    content: '▼';
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #ffffff;
-    pointer-events: none;
-}
-
-/* Add styles for when content is being translated */
-.translating {
-    opacity: 0.7;
-    transition: opacity 0.3s ease;
-}
-
-.hero-background {
-    position: relative;
-    width: 100%;
-    height: 100vh;
+    height: 80vh;
+    background: #000;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     overflow: hidden;
 }
 
-.hero-image {
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Darkens the image for better text visibility */
+    opacity: 0.7;
 }
 
 .hero-content {
     position: relative;
     z-index: 2;
-    /* ... rest of the existing hero-content styles ... */
+    max-width: 800px;
+    padding: 0 2rem;
+}
+
+.hero-content h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.hero-btn {
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.3s;
+}
+
+.hero-btn-contact {
+    background: var(--button-pink);
+    color: white;
+}
+
+.hero-btn-read {
+    background: var(--button-green);
+    color: white;
+}
+
+/* Features Section */
+.features-section {
+    padding: 4rem 0;
+    background: white;
+}
+
+.features-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.feature-item {
+    text-align: center;
+}
+
+.feature-icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 1rem;
+}
+
+.feature-item h3 {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+/* Feature Details Section */
+.feature-details {
+    padding: 4rem 0;
+    background: white;
+}
+
+.feature-details-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    padding: 0 2rem;
+    align-items: center;
+}
+
+.feature-details-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
+
+.feature-details-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+.feature-details-image {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.feature-details-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+    
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .feature-details-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Add this to your existing CSS */
+.contact {
+    background-color: #1a1a1a; /* Dark background for the contact section */
+    color: #ffffff; /* White text */
+    padding: 50px 20px; /* Padding for spacing */
+    text-align: center; /* Center text */
+}
+
+.contact h2 {
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.contact form {
+    max-width: 600px; /* Limit form width */
+    margin: auto; /* Center the form */
+}
+
+.contact label {
+    display: block; /* Block display for labels */
+    margin: 10px 0 5px; /* Spacing for labels */
+}
+
+.contact input, .contact textarea {
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Padding for inputs */
+    margin-bottom: 15px; /* Space below inputs */
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.contact button {
+    background-color: #E535AB; /* Button color */
+    color: white; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+}
+
+.contact button:hover {
+    background-color: #D0248A; /* Darker shade on hover */
 }

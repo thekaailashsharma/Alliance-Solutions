@@ -151,21 +151,24 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url('/images/home-header.jpg') no-repeat center center/cover;
+    background: linear-gradient(135deg, #e100c3, #28a745);
     color: var(--text-light);
     text-align: center;
     padding: 2rem;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .hero-title {
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 1rem;
+    color: var(--text-light);
 }
 
 .hero-description {
     font-size: 1.25rem;
     margin-bottom: 2rem;
+    color: var(--text-light);
 }
 
 .hero-buttons {
@@ -242,6 +245,7 @@ body {
     max-width: 800px;
     margin-left: 5%;
     margin-top: -5%;
+    animation: slideIn 1.5s ease-out;
 }
 
 .animate-text .line {
@@ -403,6 +407,16 @@ body {
         transform: translateY(0);
         opacity: 1;
     }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
 }
 
 /* Responsive adjustments */
@@ -1475,4 +1489,11 @@ body {
 html {
     scroll-padding-top: 100px; /* Matches the header height */
     scroll-behavior: smooth;
+}
+
+.services-intro {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: var(--text-dark);
+    animation: fadeIn 2s ease-in-out;
 }

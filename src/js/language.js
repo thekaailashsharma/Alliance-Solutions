@@ -10,14 +10,16 @@ const translations = {
             title: "Alliance Solutions",
             subtitle: "Construction Solutions",
             tagline: "for All",
-            description: "Would you also like to work at company and home parties, weddings, conferences, trade fairs, festivals and party cafes?",
+            description: "Are you looking for the best connection? Then Alliance Solutions B.V. is the right place for you!\n" +
+              "            We provide services in security, infrastructure, and hospitality.",
             cta: "OUR SERVICES"
         },
         support: {
             title: "Need any construction solution support?",
         },
         services: {
-            mainTitle: "How do we work?",
+            mainTitle: "Modern business professionals in recruitment",
+            intro: "We provide services in security, infrastructure, and hospitality.",
             engineering: {
                 title: "Personalized Intake",
                 description: "Both employers and candidates undergo a thorough intake process to map out their specific needs and preferences."
@@ -130,7 +132,8 @@ const translations = {
             title: "Alliance Solutions",
             subtitle: "Construction Solutions",
             tagline: "for All",
-            description: "Wil jij ook werken op bedrijfs- en thuisfeesten, bruiloften, congressen, beurzen, festivals en feestcafés?",
+            description: "Bent u op zoek naar de beste verbinding? Dan bent u bij Alliance Solutions B.V. aan het juiste adres!\n" +
+              " Wij leveren diensten op het gebied van beveiliging, infrastructuur en hospitality.",
             cta: "OUR SERVICES"
         },
         support: {
@@ -138,7 +141,8 @@ const translations = {
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
         },
         services: {
-            mainTitle: "Hoe gaan ze te werk?",
+            mainTitle: "Moderne zakelijke professionals in werving",
+            intro: "Wij bieden diensten aan op het gebied van beveiliging, infrastructuur en gastvrijheid.",
             engineering: {
                 title: "Gepersonaliseerde intake",
                 description: "Zowel werkgevers als kandidaten ondergaan een gedegen intaketraject om hun specifieke wensen en voorkeuren in kaart te brengen."

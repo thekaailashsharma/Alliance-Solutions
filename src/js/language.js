@@ -3,22 +3,24 @@ const translations = {
         nav: {
             home: "Home",
             services: "Services",
-            solutions: "Solutions",
+            about: "About Us",
             contact: "Contact"
         },
         hero: {
             title: "Alliance Solutions",
-            subtitle: "Construction Solutions",
-            tagline: "for All",
-            description: "Are you looking for the best connection? Then Alliance Solutions B.V. is the right place for you!\n" +
-              "            We provide services in security, infrastructure, and hospitality.",
-            cta: "OUR SERVICES"
+            subtitle: "Your Trusted Partner",
+            description: "Available for all your solutions. Contact us to see how we can help you.",
+            cta: {
+                contact: "Contact Us",
+                readmore: "Read More"
+            }
         },
         support: {
-            title: "Need any construction solution support?",
+            title: "Need any recruitment solution support?",
+            phone: "Call us at: (258) 1234-5678"
         },
         services: {
-            mainTitle: "Modern business professionals in recruitment",
+            mainTitle: "Professional Recruitment Solutions",
             intro: "We provide services in security, infrastructure, and hospitality.",
             engineering: {
                 title: "Personalized Intake",
@@ -31,15 +33,27 @@ const translations = {
                   "cultural fit and personal ambitions."
             },
             communication: {
-                title: "Transparent communication:",
-                description: "The company highly values open and clear communication with all parties involved.\n" +
-                  "Candidates are well-prepared for their new roles, while employers stay informed\n" +
-                  "about the selection process."
+                title: "Effective Communication",
+                point1: "24/7 availability",
+                point2: "Transparent process",
+                point3: "Personal guidance"
             },
             quality: {
                 title: "Quality and speed",
                 description: "With an efficient work process and a team experienced in recruitment and staffing,\n" +
                   "Alliance Solutions delivers high-quality personnel quickly."
+            },
+            intake: {
+                title: "Personal Intake",
+                point1: "Thorough needs analysis",
+                point2: "Individual attention",
+                point3: "Customized approach"
+            },
+            matching: {
+                title: "Tailored Solutions",
+                point1: "Perfect match guarantee",
+                point2: "Cultural fit focus",
+                point3: "Long-term success"
             }
         },
         whyChooseUs: {
@@ -123,25 +137,26 @@ const translations = {
     },
     nl: {
         nav: {
-            home: "Thuis",
+            home: "Home",
             services: "Diensten",
-            solutions: "Oplossingen",
+            about: "Over Ons",
             contact: "Contact"
         },
         hero: {
             title: "Alliance Solutions",
-            subtitle: "Construction Solutions",
-            tagline: "for All",
-            description: "Bent u op zoek naar de beste verbinding? Dan bent u bij Alliance Solutions B.V. aan het juiste adres!\n" +
-              " Wij leveren diensten op het gebied van beveiliging, infrastructuur en hospitality.",
-            cta: "OUR SERVICES"
+            subtitle: "Uw Betrouwbare Partner",
+            description: "Beschikbaar voor al uw oplossingen. Neem contact met ons op om te zien hoe wij u kunnen helpen.",
+            cta: {
+                contact: "Contact Opnemen",
+                readmore: "Meer Informatie"
+            }
         },
         support: {
-            title: "Heeft u ondersteuning nodig bij een bouwoplossing?",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            title: "Heeft u recruitment ondersteuning nodig?",
+            phone: "Bel ons op: (258) 1234-5678"
         },
         services: {
-            mainTitle: "Moderne zakelijke professionals in werving",
+            mainTitle: "Professionele Recruitment Oplossingen",
             intro: "Wij bieden diensten aan op het gebied van beveiliging, infrastructuur en gastvrijheid.",
             engineering: {
                 title: "Gepersonaliseerde intake",
@@ -154,15 +169,27 @@ const translations = {
                   "culturele fit en persoonlijke ambities."
             },
             communication: {
-                title: "Transparante communicatie",
-                description: "Het bedrijf hecht veel waarde aan open en duidelijke communicatie met alle betrokken partijen.\n" +
-                  "Kandidaten zijn goed voorbereid op hun nieuwe rol, terwijl werkgevers op de hoogte blijven\n" +
-                  "Over het selectieproces."
+                title: "Effectieve Communicatie",
+                point1: "24/7 bereikbaarheid",
+                point2: "Transparant proces",
+                point3: "Persoonlijke begeleiding"
             },
             quality: {
                 title: "Kwaliteit en snelheid",
                 description: "Met een efficiënt werkproces en een team met ervaring in werving en selectie,\n" +
                   "Alliance Solutions levert snel kwalitatief hoogstaand personeel."
+            },
+            intake: {
+                title: "Persoonlijke Intake",
+                point1: "Grondige behoefteanalyse",
+                point2: "Individuele aandacht",
+                point3: "Maatwerk aanpak"
+            },
+            matching: {
+                title: "Op Maat Gemaakte Oplossingen",
+                point1: "Perfecte match garantie",
+                point2: "Culturele fit focus",
+                point3: "Lange termijn succes"
             }
         },
         whyChooseUs: {
@@ -284,14 +311,16 @@ function changeLanguage(language) {
     }, 300);
 }
 
-// Initialize language based on localStorage or default to English
+// Update language initialization
 document.addEventListener('DOMContentLoaded', () => {
-    const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
+    // Set Dutch as default language
+    const defaultLang = 'nl';
     const languageSelect = document.getElementById('languageSelect');
     if (languageSelect) {
-        languageSelect.value = savedLanguage;
+        languageSelect.value = defaultLang;
+        // Trigger language change
+        changeLanguage(defaultLang);
     }
-    changeLanguage(savedLanguage);
 });
 
 function toggleFAQ(element) {

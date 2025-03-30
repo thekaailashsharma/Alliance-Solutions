@@ -24,23 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
         offset: 100
     });
 
-    // Mobile Navigation
-    const mobileMenuBtn = document.querySelector('.mobile-menu-toggle');
-    const mobileNav = document.querySelector('.mobile-nav');
-    const dropdowns = document.querySelectorAll('.mobile-nav .dropdown');
-
-    mobileMenuBtn?.addEventListener('click', () => {
-        mobileMenuBtn.classList.toggle('active');
-        mobileNav.classList.toggle('active');
-    });
-
-    dropdowns.forEach(dropdown => {
-        dropdown.addEventListener('click', (e) => {
-            e.preventDefault();
-            dropdown.classList.toggle('active');
-        });
-    });
-
     // Improved Smooth Scroll with Offset
     const scrollOffset = 100; // Adjust this value based on your header height
 
@@ -61,12 +44,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 top: offsetPosition,
                 behavior: 'smooth'
             });
-
-            // Close mobile menu if open
-            if (mobileNav?.classList.contains('active')) {
-                mobileNav.classList.remove('active');
-                mobileMenuBtn.classList.remove('active');
-            }
         });
     });
 
@@ -201,3 +178,33 @@ function init() {
 
 // Call the init function when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', init);
+
+// Simple dropdown menu functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mobileNav = document.querySelector('.mobile-nav');
+
+    if (menuToggle && mobileNav) {
+        menuToggle.addEventListener('click', function() {
+            this.classList.toggle('active');
+            mobileNav.classList.toggle('show');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!mobileNav.contains(e.target) && !menuToggle.contains(e.target)) {
+                menuToggle.classList.remove('active');
+                mobileNav.classList.remove('show');
+            }
+        });
+
+        // Close menu when clicking a link
+        const links = mobileNav.querySelectorAll('a');
+        links.forEach(link => {
+            link.addEventListener('click', function() {
+                menuToggle.classList.remove('active');
+                mobileNav.classList.remove('show');
+            });
+        });
+    }
+});

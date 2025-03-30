@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Construction - Professional Building Solutions</title>
+  <title>Alliance Solutions - Your Trusted Partner</title>
 
   <!-- Fonts -->
   <link
@@ -23,22 +23,25 @@
 <header class="main-header">
   <div class="header-container">
     <div class="logo">
-      <img src="/images/logo.jpg" alt="Construction Logo">
+      <img src="/images/logo.jpg" alt="Alliance Solutions Logo">
       <span>Alliance Solutions</span>
     </div>
+
+    <!-- Regular navigation -->
     <nav class="main-nav">
       <ul>
-        <li><a href="#hero" class="nav-link" data-translate="nav.home">I want to work</a></li>
-        <li><a href="#services" class="nav-link" data-translate="nav.clients">Clients</a></li>
-        <li><a href="#solutions" class="nav-link" data-translate="nav.about">About us</a></li>
-        <li><a href="#contact" class="nav-link" data-translate="nav.contact">Contact Us</a></li>
+        <li><a href="/" data-translate="nav.home">Home</a></li>
+        <li><a href="/diensten" data-translate="nav.services">Diensten</a></li>
+        <li><a href="/over-ons" data-translate="nav.about">Over Ons</a></li>
+        <li><a href="/contact" data-translate="nav.contact">Contact</a></li>
       </ul>
     </nav>
+
     <div class="header-right">
       <div class="language-switcher">
         <select id="languageSelect" onchange="changeLanguage(this.value)">
-          <option value="en">English</option>
           <option value="nl">Nederlands</option>
+          <option value="en">English</option>
         </select>
       </div>
       <a href="tel:(268)555-0123" class="phone-number">
@@ -51,81 +54,74 @@
 
 <main>
   <section id="hero" class="hero-section">
+    <div class="hero-gradient"></div>
     <div class="hero-content">
-        <h1 class="hero-title" data-translate="hero.title">Alliance Solutions</h1>
+        <h1 class="hero-title">
+            <span data-translate="hero.title">Alliance Solutions</span><br>
+            <span data-translate="hero.subtitle" style="color: var(--primary-color);">Uw Betrouwbare Partner</span>
+        </h1>
         <p class="hero-description" data-translate="hero.description">
-            Are you looking for the best connection? Then Alliance Solutions B.V. is the right place for you!
-            We provide services in security, infrastructure, and hospitality.
+            Beschikbaar voor al uw oplossingen. Neem contact met ons op om te zien hoe wij u kunnen helpen.
         </p>
         <div class="hero-buttons">
-            <a href="#contact" class="btn btn-contact" data-translate="hero.cta.contact">Contact Us</a>
-            <a href="#services" class="btn btn-readmore" data-translate="hero.cta.readmore">Read more</a>
+            <a href="/contact" class="btn btn-contact" data-translate="hero.cta.contact">Contact Opnemen</a>
+            <a href="#services" class="btn btn-readmore" data-translate="hero.cta.readmore">Meer Informatie</a>
         </div>
     </div>
+    <img src="/images/phone-mockup.png" alt="Mobile App" class="hero-mockup">
   </section>
 
   <section id="support" class="support-section">
     <div class="container">
       <div class="support-content">
-        <h3 style="color: var(--text-dark);" data-translate="support.title">Need any Recruitment solution support?</h3>
-        <a href="tel:(258)1234-5678" class="support-phone" style="color: var(--text-dark)">(258) 1234-5678</a>
+        <h3 data-translate="support.title">Heeft u recruitment ondersteuning nodig?</h3>
+        <a href="tel:(258)1234-5678" class="support-phone" data-translate="support.phone">
+          Bel ons op: (258) 1234-5678
+        </a>
       </div>
     </div>
   </section>
 
   <section id="services" class="services-section">
     <div class="container">
-      <h2 style="color: var(--text-dark);" data-translate="services.mainTitle">Modern business professionals in recruitment</h2>
-      <p class="services-intro" data-translate="services.intro">
-        We provide services in security, infrastructure, and hospitality.
-      </p>
-      <div class="services-grid">
-        <div class="service-card">
-          <div class="service-icon">
-            <img src="/images/intake.png" alt="Engineering">
-          </div>
-          <h3 data-translate="services.engineering.title">Personalized Intake</h3>
-          <p data-translate="services.engineering.description">
-            Both employers and candidates undergo a thorough intake process to map out their
-            specific needs and preferences.
-          </p>
-        </div>
+        <h2 data-translate="services.mainTitle">Professionele Recruitment Oplossingen</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="/images/intake.png" alt="Intake">
+                </div>
+                <h3 data-translate="services.intake.title">Persoonlijke Intake</h3>
+                <ul class="service-list">
+                    <li data-translate="services.intake.point1">Grondige behoefteanalyse</li>
+                    <li data-translate="services.intake.point2">Individuele aandacht</li>
+                    <li data-translate="services.intake.point3">Maatwerk aanpak</li>
+                </ul>
+            </div>
 
-        <div class="service-card featured">
-          <div class="service-icon">
-            <img src="/images/matching.png" alt="Project Management">
-          </div>
-          <h3 data-translate="services.management.title">Customized solutions:</h3>
-          <p data-translate="services.management.description">
-            Based on the intake, Alliance Solutions B.V. matches employers with the right
-            candidates. The selection is not only based on experience and skills but also on
-            cultural fit and personal ambitions.
-          </p>
-        </div>
+            <div class="service-card featured">
+                <div class="service-icon">
+                    <img src="/images/matching.png" alt="Matching">
+                </div>
+                <h3 data-translate="services.matching.title">Op Maat Gemaakte Oplossingen</h3>
+                <ul class="service-list">
+                    <li data-translate="services.matching.point1">Perfecte match garantie</li>
+                    <li data-translate="services.matching.point2">Culturele fit focus</li>
+                    <li data-translate="services.matching.point3">Lange termijn succes</li>
+                </ul>
+            </div>
 
-        <div class="service-card">
-          <div class="service-icon">
-            <img src="/images/comm.png" alt="Financial">
-          </div>
-          <h3 data-translate="services.communication.title"> Transparent Communication</h3>
-          <p data-translate="services.communication.description">
-            The company highly values open and clear communication with all parties involved.
-            Candidates are well-prepared for their new roles, while employers stay informed
-            about the selection process.
-          </p>
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="/images/comm.png" alt="Communication">
+                </div>
+                <h3 data-translate="services.communication.title">Effectieve Communicatie</h3>
+                <ul class="service-list">
+                    <li data-translate="services.communication.point1">24/7 bereikbaarheid</li>
+                    <li data-translate="services.communication.point2">Transparant proces</li>
+                    <li data-translate="services.communication.point3">Persoonlijke begeleiding</li>
+                </ul>
+            </div>
         </div>
-
-        <div class="service-card">
-          <div class="service-icon">
-            <img src="/images/comm.png" alt="Financial">
-          </div>
-          <h3 data-translate="services.quality.title"> Quality and speed</h3>
-          <p data-translate="services.quality.description">
-            With an efficient work process and a team experienced in recruitment and staffing,
-            Alliance Solutions delivers high-quality personnel quickly.
-          </p>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -276,6 +272,27 @@ company offers tailored solutions for both employers and job seekers.
       </div>
 
 
+    </div>
+  </section>
+
+  <section class="stats-section">
+    <div class="stats-grid">
+        <div class="stat-item">
+            <div class="stat-number">500+</div>
+            <p>Successful Placements</p>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">98%</div>
+            <p>Client Satisfaction</p>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">15+</div>
+            <p>Years Experience</p>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">24/7</div>
+            <p>Support Available</p>
+        </div>
     </div>
   </section>
 </main>

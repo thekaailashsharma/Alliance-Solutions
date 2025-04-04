@@ -27,7 +27,8 @@ export default defineConfig({
     allowedHosts: [
       "localhost",
       "alliance-solutions-u5fm.onrender.com",
-      "alliance-solutions.onrender.com"
+      "alliance-solutions.onrender.com",
+      "alliance-solutions-1.onrender.com/"
     ],
     proxy: {
       '/api': {

@@ -17,7 +17,7 @@ const translations = {
         },
         support: {
             title: "Need any recruitment solution support?",
-            phone: "Call us at: (258) 1234-5678"
+            phone: "Call us at: +31 6 47 61 3202"
         },
         services: {
             mainTitle: "Professional Recruitment Solutions",
@@ -58,12 +58,40 @@ const translations = {
         },
         whyChooseUs: {
             title: "Why choose us?",
-            description: "🔹 Flexibility: Solutions for both short-term and long-term staffing needs.\n" +
-              "🔹 Network: A wide range of candidates with diverse backgrounds and skills.\n" +
-              "🔹 Reliability: A strong focus on transparency and quality at every step of the process.\n" +
-              "With an innovative approach and a commitment to the satisfaction of both employers and employees, Alliance Solutions B.V. positions itself as a trusted partner in the dynamic labor market.\n" +
-              "\n" +
-              "Our goal is to reduce the workload for existing staff. We may not be the cheapest, but we are the best—as our motto says: \"Be Excellent.\" Additionally, we stand for diversity. We focus on qualities, not motivation. After our face-to-face onboarding, all necessary resources and information can be accessed in our digital environment.",
+            points: [
+                {
+                    label: "Flexibility",
+                    description: "Solutions for both short-term and long-term staffing needs."
+                },
+                {
+                    label: "Network",
+                    description: "A wide range of candidates with diverse backgrounds and skills."
+                },
+                {
+                    label: "Reliability",
+                    description: "A strong focus on transparency and quality at every step of the process."
+                },
+                {
+                    label: "Innovation",
+                    description: "An innovative approach and a commitment to the satisfaction of both employers and employees."
+                },
+                {
+                    label: "Reduced Workload",
+                    description: "Our goal is to reduce the workload for existing staff."
+                },
+                {
+                    label: "Excellence",
+                    description: "We may not be the cheapest, but we are the best—as our motto says: \"Be Excellent.\""
+                },
+                {
+                    label: "Diversity",
+                    description: "We stand for diversity. We focus on qualities, not motivation."
+                },
+                {
+                    label: "Digital Access",
+                    description: "After our face-to-face onboarding, all necessary resources and information can be accessed in our digital environment."
+                }
+            ]
         },
         solutions: {
             title: "Reliable Staffing Solutions\n" +
@@ -95,6 +123,16 @@ const translations = {
             title: "Ready to Get Started?\n" +
               "Contact Us Today!",
             description: "Alliance Solutions B.V. is a modern recruitment and staffing organization focused on connecting employers and talent across various sectors. Founded in 2024, the company's mission is to support organizations in fulfilling their staffing needs while helping candidates find challenging and suitable jobs.",
+            stats: {
+                successful: {
+                    number: "100+",
+                    description: "successful placements"
+                },
+                experience: {
+                    number: "1",
+                    description: "year experience"
+                }
+            },
             tags: {
                 specializes: {
                     title: "Specializes",
@@ -116,14 +154,40 @@ const translations = {
                 email: "Email:",
                 message: "Message:",
                 submit: "Send Message"
+            },
+            faq: {
+                title: "Frequently Asked Questions",
+                questions: [
+                    {
+                        question: "What services do you offer?",
+                        answer: "We offer a range of recruitment and staffing solutions tailored to various industries."
+                    },
+                    {
+                        question: "How can I apply for a job?",
+                        answer: "You can apply through our website or contact us directly for more information."
+                    },
+                    {
+                        question: "What industries do you serve?",
+                        answer: "We serve a wide range of industries including IT, engineering, finance, healthcare, and more."
+                    },
+                    {
+                        question: "How long does the recruitment process take?",
+                        answer: "The timeline varies depending on the position and requirements, but we strive to complete the process as efficiently as possible while ensuring quality matches."
+                    },
+                    {
+                        question: "What makes Alliance Solutions different?",
+                        answer: "With our 100+ successful placements and 1 year of experience, we offer personalized service, extensive network connections, and a commitment to finding the perfect match for both employers and job seekers."
+                    }
+                ]
             }
         },
         footer: {
             address: {
                 title: "Contact",
-                phone: "(001) 123 456 789",
-                email: "hello@gmail.com",
-                location: "5241 Elgin st. Celina, 10258"
+                phone: "+31 6 47 61 3202",
+                email: "info@alliancesolutions.nl",
+                location: "Torenlaan 5a, 1402 TA Bussum",
+                kvk: "KVK: 93544340"
             },
             links: {
                 title: "PAGE LINKS",
@@ -153,7 +217,7 @@ const translations = {
         },
         support: {
             title: "Heeft u recruitment ondersteuning nodig?",
-            phone: "Bel ons op: (258) 1234-5678"
+            phone: "Bel ons op: +31 6 47 61 3202"
         },
         services: {
             mainTitle: "Professionele Recruitment Oplossingen",
@@ -193,22 +257,41 @@ const translations = {
             }
         },
         whyChooseUs: {
-            title: "Waarom Alliance Solutions B.V.?",
-            description: "🔹 Flexibiliteit: Zowel voor korte als lange termijn personeelsbehoeften.\n" +
-              "🔹 Netwerk: Een breed scala aan kandidaten met diverse achtergronden en\n" +
-              "vaardigheden.\n" +
-              "🔹 Betrouwbaarheid: Focus op transparantie en kwaliteit in elke stap van het proces.\n" +
-              "Met een innovatieve aanpak en focus op tevredenheid van zowel werkgevers als\n" +
-              "werknemers, positioneert Alliance Solutions B.V. zich als een betrouwbare partner in\n" +
-              "de dynamische arbeidsmarkt.\n" +
-              "\n" +
-              "Doel is om de werkdruk te verlagen voor het huidige personeel. We zijn niet de\n" +
-              "goedkoopste maar wel de beste zoals ons motto zegt be excellent.\n" +
-              "Ook staan wij voor een divers bedrijf. We kijken naar kwaliteiten en niet naar\n" +
-              "motivatie.\n" +
-              "Geef ook aan na onze face to face onboarding kunnen ze alles vinden in onze\n" +
-              "digitale omgeving.",
-            cta: "BEKIJK MEER"
+            title: "Waarom kiezen voor ons?",
+            points: [
+                {
+                    label: "Flexibiliteit",
+                    description: "Oplossingen voor zowel korte als lange termijn personeelsbehoeften."
+                },
+                {
+                    label: "Netwerk",
+                    description: "Een breed scala aan kandidaten met diverse achtergronden en vaardigheden."
+                },
+                {
+                    label: "Betrouwbaarheid",
+                    description: "Een sterke focus op transparantie en kwaliteit bij elke stap van het proces."
+                },
+                {
+                    label: "Innovatie",
+                    description: "Een innovatieve aanpak en een toewijding aan de tevredenheid van zowel werkgevers als werknemers."
+                },
+                {
+                    label: "Verminderde Werkdruk",
+                    description: "Ons doel is om de werkdruk voor bestaand personeel te verminderen."
+                },
+                {
+                    label: "Excellentie",
+                    description: "We zijn misschien niet de goedkoopste, maar we zijn de beste—zoals ons motto zegt: \"Be Excellent.\""
+                },
+                {
+                    label: "Diversiteit",
+                    description: "Wij staan voor diversiteit. We focussen op kwaliteiten, niet op motivatie."
+                },
+                {
+                    label: "Digitale Toegang",
+                    description: "Na onze face-to-face onboarding, zijn alle nodige middelen en informatie toegankelijk in onze digitale omgeving."
+                }
+            ]
         },
         solutions: {
             title: "Betrouwbare personeelsoplossingen\n" +
@@ -239,6 +322,16 @@ const translations = {
             title: "Klaar om aan de slag te gaan?\n" +
               "Neem vandaag nog contact met ons op!",
             description: "Alliance Solutions B.V. is een moderne recruitment- en uitzendorganisatie gericht op het verbinden van werkgevers en talent uit verschillende sectoren. Het bedrijf, opgericht in 2024, heeft als missie organisaties te ondersteunen bij het vervullen van hun personeelsbehoeften en tegelijkertijd kandidaten te helpen uitdagende en passende banen te vinden.",
+            stats: {
+                successful: {
+                    number: "100+",
+                    description: "succesvolle plaatsingen"
+                },
+                experience: {
+                    number: "1",
+                    description: "jaar ervaring"
+                }
+            },
             tags: {
                 specializes: {
                     title: "Gespecialiseerd",
@@ -260,14 +353,40 @@ const translations = {
                 email: "E-mail:",
                 message: "Bericht:",
                 submit: "Verstuur Bericht"
+            },
+            faq: {
+                title: "Veelgestelde Vragen",
+                questions: [
+                    {
+                        question: "Welke diensten biedt u aan?",
+                        answer: "Wij bieden een breed scala aan werving- en selectieoplossingen op maat voor verschillende sectoren."
+                    },
+                    {
+                        question: "Hoe kan ik solliciteren voor een baan?",
+                        answer: "U kunt solliciteren via onze website of direct contact met ons opnemen voor meer informatie."
+                    },
+                    {
+                        question: "Welke sectoren bedient u?",
+                        answer: "Wij bedienen een breed scala aan sectoren, waaronder IT, techniek, financiën, gezondheidszorg en meer."
+                    },
+                    {
+                        question: "Hoe lang duurt het wervingsproces?",
+                        answer: "De tijdlijn varieert afhankelijk van de functie en vereisten, maar we streven ernaar het proces zo efficiënt mogelijk te voltooien met behoud van kwaliteit."
+                    },
+                    {
+                        question: "Wat maakt Alliance Solutions anders?",
+                        answer: "Met onze 100+ succesvolle plaatsingen en 1 jaar ervaring bieden we persoonlijke service, een uitgebreid netwerk en toewijding aan het vinden van de perfecte match voor zowel werkgevers als werkzoekenden."
+                    }
+                ]
             }
         },
         footer: {
             address: {
                 title: "Contact",
-                phone: "(001) 123 456 789",
-                email: "hello@gmail.com",
-                location: "5241 Elgin st. Celina, 10258"
+                phone: "+31 6 47 61 3202",
+                email: "info@alliancesolutions.nl",
+                location: "Torenlaan 5a, 1402 TA Bussum",
+                kvk: "KVK: 93544340"
             },
             links: {
                 title: "PAGE LINKS",

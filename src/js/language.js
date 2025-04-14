@@ -58,40 +58,40 @@ const translations = {
         },
         whyChooseUs: {
             title: "Why choose us?",
-            points: [
-                {
+            points: {
+                flexibility: {
                     label: "Flexibility",
                     description: "Solutions for both short-term and long-term staffing needs."
                 },
-                {
+                network: {
                     label: "Network",
                     description: "A wide range of candidates with diverse backgrounds and skills."
                 },
-                {
+                reliability: {
                     label: "Reliability",
                     description: "A strong focus on transparency and quality at every step of the process."
                 },
-                {
+                innovation: {
                     label: "Innovation",
                     description: "An innovative approach and a commitment to the satisfaction of both employers and employees."
                 },
-                {
+                workload: {
                     label: "Reduced Workload",
                     description: "Our goal is to reduce the workload for existing staff."
                 },
-                {
+                excellence: {
                     label: "Excellence",
                     description: "We may not be the cheapest, but we are the best—as our motto says: \"Be Excellent.\""
                 },
-                {
+                diversity: {
                     label: "Diversity",
                     description: "We stand for diversity. We focus on qualities, not motivation."
                 },
-                {
+                digital: {
                     label: "Digital Access",
                     description: "After our face-to-face onboarding, all necessary resources and information can be accessed in our digital environment."
                 }
-            ]
+            }
         },
         solutions: {
             title: "Reliable Staffing Solutions\n" +
@@ -179,6 +179,20 @@ const translations = {
                         answer: "With our 100+ successful placements and 1 year of experience, we offer personalized service, extensive network connections, and a commitment to finding the perfect match for both employers and job seekers."
                     }
                 ]
+            },
+            cards: {
+                call: {
+                    title: "Call Us"
+                },
+                email: {
+                    title: "Email Us"
+                },
+                visit: {
+                    title: "Visit Us"
+                },
+                company: {
+                    title: "Company Info"
+                }
             }
         },
         footer: {
@@ -197,6 +211,12 @@ const translations = {
         },
         common: {
             viewMore: "View More →"
+        },
+        stats: {
+            placements: "Successful Placements",
+            satisfaction: "Client Satisfaction",
+            experience: "Years Experience",
+            support: "Support Available"
         }
     },
     nl: {
@@ -258,40 +278,40 @@ const translations = {
         },
         whyChooseUs: {
             title: "Waarom kiezen voor ons?",
-            points: [
-                {
+            points: {
+                flexibility: {
                     label: "Flexibiliteit",
                     description: "Oplossingen voor zowel korte als lange termijn personeelsbehoeften."
                 },
-                {
+                network: {
                     label: "Netwerk",
                     description: "Een breed scala aan kandidaten met diverse achtergronden en vaardigheden."
                 },
-                {
+                reliability: {
                     label: "Betrouwbaarheid",
                     description: "Een sterke focus op transparantie en kwaliteit bij elke stap van het proces."
                 },
-                {
+                innovation: {
                     label: "Innovatie",
-                    description: "Een innovatieve aanpak en een toewijding aan de tevredenheid van zowel werkgevers als werknemers."
+                    description: "Een innovatieve aanpak en toewijding aan de tevredenheid van zowel werkgevers als werknemers."
                 },
-                {
+                workload: {
                     label: "Verminderde Werkdruk",
                     description: "Ons doel is om de werkdruk voor bestaand personeel te verminderen."
                 },
-                {
+                excellence: {
                     label: "Excellentie",
                     description: "We zijn misschien niet de goedkoopste, maar we zijn de beste—zoals ons motto zegt: \"Be Excellent.\""
                 },
-                {
+                diversity: {
                     label: "Diversiteit",
                     description: "Wij staan voor diversiteit. We focussen op kwaliteiten, niet op motivatie."
                 },
-                {
+                digital: {
                     label: "Digitale Toegang",
-                    description: "Na onze face-to-face onboarding, zijn alle nodige middelen en informatie toegankelijk in onze digitale omgeving."
+                    description: "Na onze face-to-face onboarding zijn alle nodige middelen en informatie toegankelijk in onze digitale omgeving."
                 }
-            ]
+            }
         },
         solutions: {
             title: "Betrouwbare personeelsoplossingen\n" +
@@ -378,6 +398,20 @@ const translations = {
                         answer: "Met onze 100+ succesvolle plaatsingen en 1 jaar ervaring bieden we persoonlijke service, een uitgebreid netwerk en toewijding aan het vinden van de perfecte match voor zowel werkgevers als werkzoekenden."
                     }
                 ]
+            },
+            cards: {
+                call: {
+                    title: "Bel Ons"
+                },
+                email: {
+                    title: "E-mail Ons"
+                },
+                visit: {
+                    title: "Bezoek Ons"
+                },
+                company: {
+                    title: "Bedrijfsinformatie"
+                }
             }
         },
         footer: {
@@ -396,6 +430,12 @@ const translations = {
         },
         common: {
             viewMore: "Bekijk Meer →"
+        },
+        stats: {
+            placements: "Succesvolle Plaatsingen",
+            satisfaction: "Klanttevredenheid",
+            experience: "Jaar Ervaring",
+            support: "Ondersteuning Beschikbaar"
         }
     }
 };

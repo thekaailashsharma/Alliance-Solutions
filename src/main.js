@@ -208,3 +208,77 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Get all navigation links
+    const navLinks = document.querySelectorAll('.nav-link');
+    
+    // Function to show page
+    function showPage(pageId) {
+        // Hide all pages
+        document.querySelectorAll('.page').forEach(page => {
+            page.classList.remove('active');
+        });
+        
+        // Show selected page
+        const selectedPage = document.getElementById(pageId + '-page');
+        if (selectedPage) {
+            selectedPage.classList.add('active');
+        }
+        
+        // Update active nav link
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('data-page') === pageId) {
+                link.classList.add('active');
+            }
+        });
+        
+        // Scroll to top
+        window.scrollTo(0, 0);
+    }
+    
+    // Add click handlers to nav links
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const pageId = this.getAttribute('data-page');
+            showPage(pageId);
+            
+            // Update URL without page reload
+            history.pushState({page: pageId}, '', `#${pageId}`);
+        });
+    });
+    
+    // Handle browser back/forward buttons
+    window.addEventListener('popstate', function(e) {
+        if (e.state && e.state.page) {
+            showPage(e.state.page);
+        } else {
+            showPage('home');
+        }
+    });
+    
+    // Show initial page based on URL hash or default to home
+    const initialPage = window.location.hash.slice(1) || 'home';
+    showPage(initialPage);
+});
+
+// Super simple hamburger menu
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.getElementById('hamburger-menu');
+    const nav = document.getElementById('main-nav');
+
+    // Simple toggle function
+    function toggleMenu() {
+        nav.classList.toggle('active');
+    }
+
+    // Toggle menu on hamburger click
+    hamburger.addEventListener('click', toggleMenu);
+
+    // Close menu when clicking a link
+    nav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', toggleMenu);
+    });
+});

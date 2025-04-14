@@ -27,20 +27,27 @@
       <span>Alliance Solutions</span>
     </div>
 
+    <!-- Hamburger Menu Button -->
+    <button class="hamburger-menu" id="hamburger-menu" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
     <!-- Regular navigation -->
-    <nav class="main-nav">
+    <nav class="main-nav" id="main-nav">
       <ul>
-        <li><a href="#hero" data-translate="nav.home">Home</a></li>
-        <li><a href="#services" data-translate="nav.services">Diensten</a></li>
-        <li><a href="#why-choose-us" data-translate="nav.about">Over Ons</a></li>
-        <li><a href="#contact" data-translate="nav.contact">Contact</a></li>
+        <li><a href="#" data-page="home" data-translate="nav.home" class="nav-link active">Home</a></li>
+        <li><a href="#" data-page="services" data-translate="nav.services" class="nav-link">Diensten</a></li>
+        <li><a href="#" data-page="about" data-translate="nav.about" class="nav-link">Over Ons</a></li>
+        <li><a href="#" data-page="contact" data-translate="nav.contact" class="nav-link">Contact</a></li>
       </ul>
     </nav>
 
     <div class="header-right">
       <div class="language-switcher">
         <select id="languageSelect" onchange="changeLanguage(this.value)">
-          <option value="nl">Nederlands</option>
+          <option value="nl">Dutch</option>
           <option value="en">English</option>
         </select>
       </div>
@@ -53,185 +60,221 @@
 </header>
 
 <main>
-  <section id="hero" class="hero-section">
-    <div class="hero-gradient"></div>
-    <div class="hero-content">
-        <h1 class="hero-title">
-            <span data-translate="hero.title">Alliance Solutions</span><br>
-            <span data-translate="hero.subtitle" style="color: var(--primary-color);">Uw Betrouwbare Partner</span>
-        </h1>
-        <p class="hero-description" data-translate="hero.description">
-            Beschikbaar voor al uw oplossingen. Neem contact met ons op om te zien hoe wij u kunnen helpen.
-        </p>
-        <div class="hero-buttons">
-            <a href="/contact" class="btn btn-contact" data-translate="hero.cta.contact">Contact Opnemen</a>
-            <a href="#services" class="btn btn-readmore" data-translate="hero.cta.readmore">Meer Informatie</a>
-        </div>
-    </div>
-  </section>
-
-  <section id="support" class="support-section">
-    <div class="container">
-      <div class="support-content">
-        <h3 data-translate="support.title">Heeft u recruitment ondersteuning nodig?</h3>
-        <a href="tel:+31647613202" class="support-phone" data-translate="support.phone">
-          Bel ons op: +31 6 47 61 3202
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section id="services" class="services-section">
-    <div class="container">
-        <h2 data-translate="services.mainTitle">Professionele Recruitment Oplossingen</h2>
-        <div class="services-grid">
-            <div class="service-card">
-                <div class="service-icon">
-                    <img src="/images/intake.png" alt="Intake">
-                </div>
-                <h3 data-translate="services.intake.title">Persoonlijke Intake</h3>
-                <ul class="service-list">
-                    <li data-translate="services.intake.point1">Grondige behoefteanalyse</li>
-                    <li data-translate="services.intake.point2">Individuele aandacht</li>
-                    <li data-translate="services.intake.point3">Maatwerk aanpak</li>
-                </ul>
-            </div>
-
-            <div class="service-card featured">
-                <div class="service-icon">
-                    <img src="/images/matching.png" alt="Matching">
-                </div>
-                <h3 data-translate="services.matching.title">Op Maat Gemaakte Oplossingen</h3>
-                <ul class="service-list">
-                    <li data-translate="services.matching.point1">Perfecte match garantie</li>
-                    <li data-translate="services.matching.point2">Culturele fit focus</li>
-                    <li data-translate="services.matching.point3">Lange termijn succes</li>
-                </ul>
-            </div>
-
-            <div class="service-card">
-                <div class="service-icon">
-                    <img src="/images/comm.png" alt="Communication">
-                </div>
-                <h3 data-translate="services.communication.title">Effectieve Communicatie</h3>
-                <ul class="service-list">
-                    <li data-translate="services.communication.point1">24/7 bereikbaarheid</li>
-                    <li data-translate="services.communication.point2">Transparant proces</li>
-                    <li data-translate="services.communication.point3">Persoonlijke begeleiding</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-  </section>
-
-  <section id="why-choose-us" class="why-choose-us-section">
-    <div class="container">
-      <h2 data-translate="whyChooseUs.title">Why choose us?</h2>
-      <div class="why-choose-us-points">
-        <div class="point">
-          <span class="bullet">🔹</span>
-          <p><strong>Flexibility:</strong> Solutions for both short-term and long-term staffing needs.</p>
-        </div>
-        <div class="point">
-          <span class="bullet">🔹</span>
-          <p><strong>Network:</strong> A wide range of candidates with diverse backgrounds and skills.</p>
-        </div>
-        <div class="point">
-          <span class="bullet">🔹</span>
-          <p><strong>Reliability:</strong> A strong focus on transparency and quality at every step of the process.</p>
-        </div>
-        <div class="point">
-          <span class="bullet">🔹</span>
-          <p><strong>Innovation:</strong> An innovative approach and a commitment to the satisfaction of both employers and employees.</p>
-        </div>
-        <div class="point">
-          <span class="bullet">🔹</span>
-          <p><strong>Reduced Workload:</strong> Our goal is to reduce the workload for existing staff.</p>
-        </div>
-        <div class="point">
-          <span class="bullet">🔹</span>
-          <p><strong>Excellence:</strong> We may not be the cheapest, but we are the best—as our motto says: "Be Excellent."</p>
-        </div>
-        <div class="point">
-          <span class="bullet">🔹</span>
-          <p><strong>Diversity:</strong> We stand for diversity. We focus on qualities, not motivation.</p>
-        </div>
-        <div class="point">
-          <span class="bullet">🔹</span>
-          <p><strong>Digital Access:</strong> After our face-to-face onboarding, all necessary resources and information can be accessed in our digital environment.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="contact-section">
-    <div class="container">
-      <h2 class="section-title" data-translate="contact.title">Contact Us</h2>
-      
-      <div class="contact-info-grid">
-        <div class="contact-card">
-          <div class="contact-icon">
-            <i class="fas fa-phone"></i>
+  <!-- Home Page -->
+  <div id="home-page" class="page active">
+    <section id="hero" class="hero-section">
+      <div class="hero-gradient"></div>
+      <div class="hero-content">
+          <h1 class="hero-title">
+              <span data-translate="hero.title">Alliance Solutions</span><br>
+              <span data-translate="hero.subtitle" style="color: var(--primary-color);">Uw Betrouwbare Partner</span>
+          </h1>
+          <p class="hero-description" data-translate="hero.description">
+              Beschikbaar voor al uw oplossingen. Neem contact met ons op om te zien hoe wij u kunnen helpen.
+          </p>
+          <div class="hero-buttons">
+              <a href="#" data-page="contact" class="btn btn-contact nav-link" data-translate="hero.cta.contact">Contact Opnemen</a>
+              <a href="#" data-page="services" class="btn btn-readmore nav-link" data-translate="hero.cta.readmore">Meer Informatie</a>
           </div>
-          <h3>Call Us</h3>
-          <a href="tel:+31647613202" class="contact-link">+31 6 47 61 3202</a>
+      </div>
+    </section>
+
+    <section id="support" class="support-section">
+      <div class="container">
+        <div class="support-content">
+          <h3 data-translate="support.title">Heeft u recruitment ondersteuning nodig?</h3>
+          <a href="tel:+31647613202" class="support-phone" data-translate="support.phone">
+            Bel ons op: +31 6 47 61 3202
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Services Page -->
+  <div id="services-page" class="page">
+    <section id="services" class="services-section">
+      <div class="container">
+          <h2 data-translate="services.mainTitle">Professionele Recruitment Oplossingen</h2>
+          <div class="services-grid">
+              <div class="service-card">
+                  <div class="service-icon">
+                      <img src="/images/intake.png" alt="Intake">
+                  </div>
+                  <h3 data-translate="services.intake.title">Persoonlijke Intake</h3>
+                  <ul class="service-list">
+                      <li data-translate="services.intake.point1">Grondige behoefteanalyse</li>
+                      <li data-translate="services.intake.point2">Individuele aandacht</li>
+                      <li data-translate="services.intake.point3">Maatwerk aanpak</li>
+                  </ul>
+              </div>
+
+              <div class="service-card featured">
+                  <div class="service-icon">
+                      <img src="/images/matching.png" alt="Matching">
+                  </div>
+                  <h3 data-translate="services.matching.title">Op Maat Gemaakte Oplossingen</h3>
+                  <ul class="service-list">
+                      <li data-translate="services.matching.point1">Perfecte match garantie</li>
+                      <li data-translate="services.matching.point2">Culturele fit focus</li>
+                      <li data-translate="services.matching.point3">Lange termijn succes</li>
+                  </ul>
+              </div>
+
+              <div class="service-card">
+                  <div class="service-icon">
+                      <img src="/images/comm.png" alt="Communication">
+                  </div>
+                  <h3 data-translate="services.communication.title">Effectieve Communicatie</h3>
+                  <ul class="service-list">
+                      <li data-translate="services.communication.point1">24/7 bereikbaarheid</li>
+                      <li data-translate="services.communication.point2">Transparant proces</li>
+                      <li data-translate="services.communication.point3">Persoonlijke begeleiding</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- About Page -->
+  <div id="about-page" class="page">
+    <section id="why-choose-us" class="why-choose-us-section">
+      <div class="container">
+        <h2 data-translate="whyChooseUs.title">Why choose us?</h2>
+        <div class="why-choose-us-points">
+          <div class="point">
+            <span class="bullet">🔹</span>
+            <p>
+                <strong data-translate="whyChooseUs.points.flexibility.label">Flexibiliteit</strong>
+                <span data-translate="whyChooseUs.points.flexibility.description">Oplossingen voor zowel korte als lange termijn personeelsbehoeften.</span>
+            </p>
+          </div>
+          <div class="point">
+            <span class="bullet">🔹</span>
+            <p>
+                <strong data-translate="whyChooseUs.points.network.label">Netwerk</strong>
+                <span data-translate="whyChooseUs.points.network.description">Een breed scala aan kandidaten met diverse achtergronden en vaardigheden.</span>
+            </p>
+          </div>
+          <div class="point">
+            <span class="bullet">🔹</span>
+            <p>
+                <strong data-translate="whyChooseUs.points.reliability.label">Betrouwbaarheid</strong>
+                <span data-translate="whyChooseUs.points.reliability.description">Een sterke focus op transparantie en kwaliteit bij elke stap van het proces.</span>
+            </p>
+          </div>
+          <div class="point">
+            <span class="bullet">🔹</span>
+            <p>
+                <strong data-translate="whyChooseUs.points.innovation.label">Innovatie</strong>
+                <span data-translate="whyChooseUs.points.innovation.description">Een innovatieve aanpak en toewijding aan de tevredenheid van zowel werkgevers als werknemers.</span>
+            </p>
+          </div>
+          <div class="point">
+            <span class="bullet">🔹</span>
+            <p>
+                <strong data-translate="whyChooseUs.points.workload.label">Verminderde Werkdruk</strong>
+                <span data-translate="whyChooseUs.points.workload.description">Ons doel is om de werkdruk voor bestaand personeel te verminderen.</span>
+            </p>
+          </div>
+          <div class="point">
+            <span class="bullet">🔹</span>
+            <p>
+                <strong data-translate="whyChooseUs.points.excellence.label">Excellentie</strong>
+                <span data-translate="whyChooseUs.points.excellence.description">We zijn misschien niet de goedkoopste, maar we zijn de beste—zoals ons motto zegt: "Be Excellent."</span>
+            </p>
+          </div>
+          <div class="point">
+            <span class="bullet">🔹</span>
+            <p>
+                <strong data-translate="whyChooseUs.points.diversity.label">Diversiteit</strong>
+                <span data-translate="whyChooseUs.points.diversity.description">Wij staan voor diversiteit. We focussen op kwaliteiten, niet op motivatie.</span>
+            </p>
+          </div>
+          <div class="point">
+            <span class="bullet">🔹</span>
+            <p>
+                <strong data-translate="whyChooseUs.points.digital.label">Digitale Toegang</strong>
+                <span data-translate="whyChooseUs.points.digital.description">Na onze face-to-face onboarding zijn alle nodige middelen en informatie toegankelijk in onze digitale omgeving.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="stats-section">
+      <div class="stats-grid">
+          <div class="stat-item">
+              <div class="stat-number">100+</div>
+              <p data-translate="stats.placements">Successful Placements</p>
+          </div>
+          <div class="stat-item">
+              <div class="stat-number">98%</div>
+              <p data-translate="stats.satisfaction">Client Satisfaction</p>
+          </div>
+          <div class="stat-item">
+              <div class="stat-number">1+</div>
+              <p data-translate="stats.experience">Years Experience</p>
+          </div>
+          <div class="stat-item">
+              <div class="stat-number">24/7</div>
+              <p data-translate="stats.support">Support Available</p>
+          </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Contact Page -->
+  <div id="contact-page" class="page">
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2 class="section-title" data-translate="contact.title">Contact Us</h2>
+        
+        <div class="contact-info-grid">
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <h3 data-translate="contact.cards.call.title">Call Us</h3>
+            <a href="tel:+31647613202" class="contact-link">+31 6 47 61 3202</a>
+          </div>
+          
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h3 data-translate="contact.cards.email.title">Email Us</h3>
+            <a href="mailto:info@alliancesolutions.nl" class="contact-link">info@alliancesolutions.nl</a>
+          </div>
+          
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h3 data-translate="contact.cards.visit.title">Visit Us</h3>
+            <p data-translate="footer.address.location">Torenlaan 5a, 1402 TA Bussum</p>
+          </div>
+          
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-building"></i>
+            </div>
+            <h3 data-translate="contact.cards.company.title">Company Info</h3>
+            <p data-translate="footer.address.kvk">KVK: 93544340</p>
+          </div>
         </div>
         
-        <div class="contact-card">
-          <div class="contact-icon">
-            <i class="fas fa-envelope"></i>
+        <!-- FAQ Section with updated styling -->
+        <div class="faq-section">
+          <h3 class="faq-title" data-translate="contact.faq.title">Frequently Asked Questions</h3>
+          <div id="faq-container" class="faq-container">
+            <!-- FAQ items will be generated via JavaScript -->
           </div>
-          <h3>Email Us</h3>
-          <a href="mailto:info@alliancesolutions.nl" class="contact-link">info@alliancesolutions.nl</a>
-        </div>
-        
-        <div class="contact-card">
-          <div class="contact-icon">
-            <i class="fas fa-map-marker-alt"></i>
-          </div>
-          <h3>Visit Us</h3>
-          <p>Torenlaan 5a, 1402 TA Bussum</p>
-        </div>
-        
-        <div class="contact-card">
-          <div class="contact-icon">
-            <i class="fas fa-building"></i>
-          </div>
-          <h3>Company Info</h3>
-          <p>KVK: 93544340</p>
         </div>
       </div>
-      
-      <!-- FAQ Section with updated styling -->
-      <div class="faq-section">
-        <h3 class="faq-title" data-translate="contact.faq.title">Frequently Asked Questions</h3>
-        <div id="faq-container" class="faq-container">
-          <!-- FAQ items will be generated via JavaScript -->
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="stats-section">
-    <div class="stats-grid">
-        <div class="stat-item">
-            <div class="stat-number">100+</div>
-            <p>Successful Placements</p>
-        </div>
-        <div class="stat-item">
-            <div class="stat-number">98%</div>
-            <p>Client Satisfaction</p>
-        </div>
-        <div class="stat-item">
-            <div class="stat-number">1+</div>
-            <p>Years Experience</p>
-        </div>
-        <div class="stat-item">
-            <div class="stat-number">24/7</div>
-            <p>Support Available</p>
-        </div>
-    </div>
-  </section>
+    </section>
+  </div>
 </main>
 <footer class="footer">
     <div class="container footer-content">
